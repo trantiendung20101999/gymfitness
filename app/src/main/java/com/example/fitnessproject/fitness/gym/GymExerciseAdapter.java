@@ -42,6 +42,7 @@ public class GymExerciseAdapter  extends RecyclerView.Adapter<GymExerciseHolder>
     }
     // code code code no bro
 
+
     @Override
     public void onBindViewHolder(@NonNull GymExerciseHolder holder, int position) {
 
