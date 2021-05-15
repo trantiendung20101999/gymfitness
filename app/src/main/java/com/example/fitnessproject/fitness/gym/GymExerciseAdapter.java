@@ -40,7 +40,7 @@ public class GymExerciseAdapter  extends RecyclerView.Adapter<GymExerciseHolder>
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_gym_rev,parent,false);
         return new GymExerciseHolder(v);
     }
-    // code code code
+    // code code code no bro
 
     @Override
     public void onBindViewHolder(@NonNull GymExerciseHolder holder, int position) {
