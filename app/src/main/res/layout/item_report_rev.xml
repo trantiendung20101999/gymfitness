@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/report_item"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imgReportItem"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_muscle"
+        ></ImageView>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtDescribeItem"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Muscle"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        ></TextView>
+
+
+</LinearLayout>

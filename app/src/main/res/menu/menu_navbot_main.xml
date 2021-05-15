@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mNavMainFitness"
+        android:title="Fitness"
+        android:icon="@drawable/ic_fitness"
+        >
+    </item>
+
+    <item
+        android:id="@+id/mNavMainHistory"
+        android:title="History"
+        android:icon="@drawable/ic_history"
+        >
+    </item>
+
+    <item
+        android:id="@+id/mNavMainReport"
+        android:title="Report"
+        android:icon="@drawable/ic_report"
+        >
+    </item>
+
+</menu>
