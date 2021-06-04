@@ -258,20 +258,19 @@ public class FragmentHistoryMain extends Fragment implements OnChartValueSelecte
 
         ArrayList<Entry> entries = new ArrayList<Entry>();
         for (int index = 0; index < 12; index++) {
-            Log.e("dsfsghjgjgj",data[index]+"");
             entries.add(new Entry(index, data[index]));
         }
 
-        LineDataSet set = new LineDataSet(entries, "Request Ots approved");
-        set.setColor(Color.GREEN);
+        LineDataSet set = new LineDataSet(entries, "Time ");
+        set.setColor(R.color.flame);
         set.setLineWidth(2.5f);
-        set.setCircleColor(Color.GREEN);
+        set.setCircleColor(R.color.flame);
         set.setCircleRadius(5f);
-        set.setFillColor(Color.GREEN);
+        set.setFillColor(R.color.flame);
         set.setMode(LineDataSet.Mode.CUBIC_BEZIER);
         set.setDrawValues(true);
         set.setValueTextSize(10f);
-        set.setValueTextColor(Color.GREEN);
+        set.setValueTextColor(R.color.flame);
 
         set.setAxisDependency(YAxis.AxisDependency.LEFT);
         d.addDataSet(set);
