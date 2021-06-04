@@ -3,6 +3,7 @@ package com.example.fitnessproject.fitness.gym;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,8 @@ public class GymExerciseHolder extends RecyclerView.ViewHolder {
 
     private ImageButton imgExerciseGym;
     private TextView txtDesExerciseGym;
+
+
 
     public ImageButton getImgExerciseGym() {
         return imgExerciseGym;
@@ -33,7 +36,6 @@ public class GymExerciseHolder extends RecyclerView.ViewHolder {
 
     public GymExerciseHolder(@NonNull View itemView) {
         super(itemView);
-
         imgExerciseGym = itemView.findViewById(R.id.imgExerciseGym);
 
         txtDesExerciseGym = itemView.findViewById(R.id.txtDesExerciseGym);

@@ -32,9 +32,6 @@ public class FitnessViewPagerAdapter extends FragmentStatePagerAdapter {
                 return new FragmentCalisthenicsFitness();
             }
 
-            case 2: {
-                return new FragmentCalenderFitness();
-            }
 
             default: {
                 return new FragmentGymFitness();
@@ -45,7 +42,7 @@ public class FitnessViewPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 2;
     }
 
     @Nullable
@@ -55,9 +52,7 @@ public class FitnessViewPagerAdapter extends FragmentStatePagerAdapter {
         {
             case 0: return "Gym";
 
-            case 1: return "Calisthenics";
-
-            case 2: return "Calender";
+            case 1: return "At home";
 
             default: return "Gym";
         }

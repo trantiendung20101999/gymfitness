@@ -2,6 +2,7 @@ package com.example.fitnessproject.fitness.gym;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,21 +15,21 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.fitnessproject.ExerciseActivity;
 import com.example.fitnessproject.MainActivity;
 import com.example.fitnessproject.R;
-import com.example.fitnessproject.model.Exercise;
+import com.example.fitnessproject.model.BaiTap;
 
 import java.util.List;
 
 public class GymExerciseAdapter  extends RecyclerView.Adapter<GymExerciseHolder> {
 
     private Context context;
-    private List<Exercise> listGymEx;
+    private List<BaiTap> listGymEx;
 
     public GymExerciseAdapter(Context context)
     {
         this.context = context;
     }
 
-    public void setData(List<Exercise> listGymEx)
+    public void setData(List<BaiTap> listGymEx)
     {
         this.listGymEx = listGymEx;
         notifyDataSetChanged();
@@ -46,26 +47,26 @@ public class GymExerciseAdapter  extends RecyclerView.Adapter<GymExerciseHolder>
     @Override
     public void onBindViewHolder(@NonNull GymExerciseHolder holder, int position) {
 
-        Exercise exercise = listGymEx.get(position);
+        BaiTap baiTap = listGymEx.get(position);
 
-        if(exercise ==null)
+        if(baiTap ==null)
         {
             return;
         }
         else
         {
             ImageButton imgGymEx = holder.getImgExerciseGym();
-            imgGymEx.setImageResource(exercise.getImage());
+            imgGymEx.setImageResource(baiTap.getImage());
             holder.setImgExerciseGym(imgGymEx);
             TextView txtGymEx = holder.getTxtDesExerciseGym();
-            txtGymEx.setText(exercise.getDes());
+            txtGymEx.setText(baiTap.getName());
             holder.setTxtDesExerciseGym(txtGymEx);
 
             imgGymEx.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(context, ExerciseActivity.class);
-                    intent.putExtra("exercise",exercise);
+                    intent.putExtra("baitap", baiTap);
                     context.startActivity(intent);
                 }
             });

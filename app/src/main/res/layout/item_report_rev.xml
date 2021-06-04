@@ -1,33 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:layout_width="match_parent"
+    android:id="@+id/linearr"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="5dp"
     android:background="@drawable/report_item"
-    android:layout_marginTop="20dp"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:paddingBottom="10dp"
     android:orientation="horizontal">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/txtTitle"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:text="Tap nguc"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"></TextView>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/txtDate"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:text="20/10/1999/11:12"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        ></TextView>
+
+</LinearLayout>
 
     <ImageView
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_baseline_check_24"
+        ></ImageView>
+
+
+    <ImageButton
         android:paddingLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/imgReportItem"
+        android:layout_marginTop="30dp"
+        android:id="@+id/imbdel"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/ic_muscle"
-        ></ImageView>
-    <TextView
-        android:layout_marginTop="20dp"
-        android:id="@+id/txtDescribeItem"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:text="Muscle"
-        android:textSize="15dp"
-        android:gravity="center"
-        android:paddingLeft="20dp"
-        ></TextView>
+        android:layout_marginLeft="30dp"
+
+        android:src="@drawable/ic_baseline_delete_24"
+        ></ImageButton>
+
+
 
 
 </LinearLayout>

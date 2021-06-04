@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context=".GymDayActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/nosifer"
+        android:text="CREATE YOUR GYM DAY"
+        android:textColor="@color/flame"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/txtTarget"
+        android:fontFamily="@font/nosifer"
+        android:textColor="@color/flame"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Target:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="@id/txtTarget"
+        app:layout_constraintLeft_toRightOf="@id/txtTarget"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_weight=".28"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/spinner_drop"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edDate"
+        android:layout_width="150dp"
+        android:background="@drawable/background_tab"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTarget"
+        android:hint="Date "
+        android:textColor="@color/flame"
+        android:textColorHint="@color/flame"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/edTime"
+        android:layout_width="150dp"
+        android:background="@drawable/background_tab"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTarget"
+        android:hint="Time "
+        android:textColor="@color/flame"
+        android:textColorHint="@color/flame"
+        >
+    </EditText>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/revGymFitness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtTarget"
+        android:layout_marginTop="60dp"
+        android:paddingBottom="100dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btnCreate"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/background_tab"
+        app:layout_constraintTop_toBottomOf="@id/txtTarget"
+        android:text="Create your gym day"
+        ></Button>
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:fontFamily="@font/nosifer"
+        android:textColor="@color/flame"
+        app:layout_constraintTop_toBottomOf="@id/btnCreate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Time Complete :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/revGymFitness2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtTarget"
+        android:layout_marginTop="480dp"
+        android:paddingBottom="100dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

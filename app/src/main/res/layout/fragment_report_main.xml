@@ -4,11 +4,47 @@
     android:layout_height="match_parent"
     android:background="@color/dark"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-<androidx.recyclerview.widget.RecyclerView
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"
+        android:fontFamily="@font/nosifer"
+        android:textColor="@color/flame"
+        android:text="Your Gym Day"
+        android:textSize="25dp"
+        android:paddingLeft="80dp"
+        android:paddingTop="30dp"
+        android:layout_height="250dp"></TextView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:backgroundTint="@color/flame"
+        app:backgroundTint="@color/flame"
+        android:background="@color/flame"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.95"
+        android:layout_margin="15dp"
+
+        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <androidx.recyclerview.widget.RecyclerView
     android:backgroundTint="@color/dark"
     android:background="@drawable/gymex_item"
     android:id="@+id/revReport"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
     app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginTop="100dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    android:layout_height="500dp"></androidx.recyclerview.widget.RecyclerView>
 </androidx.constraintlayout.widget.ConstraintLayout>

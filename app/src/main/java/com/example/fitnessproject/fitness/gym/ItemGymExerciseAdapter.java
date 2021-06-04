@@ -42,7 +42,7 @@ public class ItemGymExerciseAdapter extends RecyclerView.Adapter<ItemGymExercise
 
         String title = sectionGymExerciseArrayList.get(position).getHeaderTitle();
 
-        ArrayList listGymExercise = sectionGymExerciseArrayList.get(position).getExerciseArrayList();
+        ArrayList listGymExercise = sectionGymExerciseArrayList.get(position).getBaiTapArrayList();
 
         GymExerciseAdapter adapter = new GymExerciseAdapter(mContext);
         adapter.setData(listGymExercise);

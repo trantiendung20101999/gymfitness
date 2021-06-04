@@ -1,18 +1,19 @@
 package com.example.fitnessproject.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class SectionGymExercise {
+public class SectionGymExercise implements Serializable {
 
     private String headerTitle;
-    private ArrayList<Exercise> exerciseArrayList;
+    private ArrayList<BaiTap> baiTapArrayList;
 
     public SectionGymExercise() {
     }
 
-    public SectionGymExercise(String headerTitle, ArrayList<Exercise> exerciseArrayList) {
+    public SectionGymExercise(String headerTitle, ArrayList<BaiTap> baiTapArrayList) {
         this.headerTitle = headerTitle;
-        this.exerciseArrayList = exerciseArrayList;
+        this.baiTapArrayList = baiTapArrayList;
     }
 
     public String getHeaderTitle() {
@@ -23,11 +24,11 @@ public class SectionGymExercise {
         this.headerTitle = headerTitle;
     }
 
-    public ArrayList<Exercise> getExerciseArrayList() {
-        return exerciseArrayList;
+    public ArrayList<BaiTap> getBaiTapArrayList() {
+        return baiTapArrayList;
     }
 
-    public void setExerciseArrayList(ArrayList<Exercise> exerciseArrayList) {
-        this.exerciseArrayList = exerciseArrayList;
+    public void setBaiTapArrayList(ArrayList<BaiTap> baiTapArrayList) {
+        this.baiTapArrayList = baiTapArrayList;
     }
 }

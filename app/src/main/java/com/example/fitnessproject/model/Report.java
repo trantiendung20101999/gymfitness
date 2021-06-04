@@ -1,6 +1,8 @@
 package com.example.fitnessproject.model;
 
-public class Report {
+import java.io.Serializable;
+
+public class Report implements Serializable {
     int image;
     String des;
 

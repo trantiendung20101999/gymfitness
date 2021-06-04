@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtDesExerciseGym"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Chest:"
+        android:padding="10dp"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/nosifer"
+        android:textColor="@color/flame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        ></TextView>
+    <ImageButton
+
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/txtDesExerciseGym"
+        app:layout_constraintLeft_toRightOf="@id/txtDesExerciseGym"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:layout_height="wrap_content"></ImageButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

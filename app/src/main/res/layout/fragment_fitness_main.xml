@@ -8,7 +8,7 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabFitness"
-        app:tabMode="auto"
+        app:tabMode="fixed"
         android:minWidth="200dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         app:tabIconTint="@color/color_tab"
         app:tabIndicatorColor="@color/white"
         app:tabIndicatorAnimationMode="elastic"
-        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorFullWidth="true"
         android:animateLayoutChanges="true"
         ></com.google.android.material.tabs.TabLayout>
 

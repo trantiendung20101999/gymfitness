@@ -1,5 +1,6 @@
 package com.example.fitnessproject.fitness;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.fitnessproject.GymDayActivity;
 import com.example.fitnessproject.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
@@ -31,19 +33,18 @@ public class FragmentFitnessMain extends Fragment {
         tabLayout = v.findViewById(R.id.tabFitness);
         viewPager = v.findViewById(R.id.viewpagerFitness);
         fab= v.findViewById(R.id.fab);
-
         FitnessViewPagerAdapter fitnessViewPagerAdapter = new FitnessViewPagerAdapter(getChildFragmentManager(),3);
 
         viewPager.setAdapter(fitnessViewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_muscle);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_pull_up);
-        tabLayout.getTabAt(2).setIcon(R.drawable.ic_calendar);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_baseline_home_work_24);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(v.getContext(), GymDayActivity.class);
+                v.getContext().startActivity(intent);
             }
         });
 
